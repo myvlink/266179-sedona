@@ -12,7 +12,7 @@
     			<li> <a href="#">Информация</a> </li>
     			<li> <a href="#">Фото и видео</a> </li>
           <li> <a href="#">Карта штата</a> </li>
-          <li> <a href="#">Гостиницы</a> </li>
+          <li> <a href="inner.html">Гостиницы</a> </li>
     		</ul>
     	</nav>
     </header>
@@ -20,15 +20,20 @@
       <article class="features">
         <h3>Седона — небольшой городок в Аризоне,  заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <section class="feature-1">
+        <section class="feature-1-img">
           <div>
-          <h3>Настоящий городок</h3>
-          <p>— №1 —</p>
-          <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            <h3>Настоящий городок</h3>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div>
-          <h3>Жилье</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <img src="#" alt="feature-1-img" width="50" height="50">
+          </div>
+        </section>
+        <section class="feature-1-txt">
+          <div>
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div>
             <h3>Еда</h3>
@@ -38,34 +43,39 @@
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
-        </section>
+        </section>        
         <section class="feature-2">
+          <div>
+            <img src="#" alt="feature-2-img" width="50" height="50">
+          </div>
           <div>
             <h3>Там есть мост дьявола</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </section>
-        <section class="feature-3">
-          <div>
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-        </section>
-        <section class="feature-4">
-          <div>
-            <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
-          </div>
-        </section>
-        <section class="feature-5">
-          <div>
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>Большинство едет в Гранд каньон и толпится там</p>
-          </div>
+        <section class="features-3-4-5">
+          <section class="feature-3">
+            <div>
+              <h3>Небольшая площадь</h3>
+              <p>— №3 —</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+          </section>
+          <section class="feature-4">
+            <div>
+              <h3>Красивая дорога</h3>
+              <p>— №4 —</p>
+              <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+            </div>
+          </section>
+          <section class="feature-5">
+            <div>
+              <h3>Мало туристов</h3>
+              <p>— №5 —</p>
+              <p>Большинство едет в Гранд каньон и толпится там</p>
+            </div>
+          </section>
         </section>
       </article>
       <section class="interested">
@@ -75,9 +85,16 @@
         </div>
       </section>        
       <section class="search-hotel">
-        <h3>Поиск гостиницы в Седоне</h3>
-        <!-- Здесь будет форма -->
-        <a class="button" href="#">Найти</a>
+        <input type="button" value="Поиск гостиницы в Седоне">
+        <!--<form>
+          <label>Дата заезда<input type="date" name="arrival_date"></label>
+          <label>Дата выезда<input type="date" name="date_of_departure"></label>
+          <label>Взрослые<input type="number" name="adults"></label>
+          <label>Дети<input type="number" name="children"></label>
+          <input type="submit" value="Найти">
+        </form>--> 
+        <div class="map">          
+        </div>      
       </section>      
     </main>
     <footer class="main-footer">
@@ -87,6 +104,10 @@
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Youtube</a></li>
       </ul>
+      <div class="footer-logo">
+        <p>Website by</p>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" alt="Логотип HTML-Academy" width="50" height="50"></a>
+      </div>
     </footer>
   </body>
 </html>
