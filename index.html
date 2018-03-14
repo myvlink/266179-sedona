@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -84,15 +87,17 @@
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
       </section>        
-      <section class="search-hotel">
-        <input type="button" value="Поиск гостиницы в Седоне">
-        <form method="post" action="https://echo.htmlacademy.ru">
-          <label>Дата заезда<input type="date" name="arrival_date"></label>
-          <label>Дата выезда<input type="date" name="date_of_departure"></label>
-          <label>Взрослые<input type="number" name="adults"></label>
-          <label>Дети<input type="number" name="children"></label>
-          <input type="submit" value="Найти">
-        </form>
+      <section class="search-hotel">        
+        <div class="search-hotel-form">
+          <input type="button" value="Поиск гостиницы в Седоне">
+          <form method="post" action="https://echo.htmlacademy.ru">
+            <label>Дата заезда<input type="date" name="arrival_date"></label>
+            <label>Дата выезда<input type="date" name="date_of_departure"></label>
+            <label>Взрослые<input type="number" name="adults" min="0"></label>
+            <label>Дети<input type="number" name="children" min="0"></label>
+            <input type="submit" value="Найти">
+          </form>
+        </div>
         <div class="map">        
         </div>      
       </section>      
