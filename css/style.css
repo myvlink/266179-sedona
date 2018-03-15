@@ -43,9 +43,7 @@ a {
 .current-page {
 	color: rgb(118,99,87);
 }
-.features::before {
-	content: "";
-	display: block;
+.hero {
 	background-image: url(../img/inscription-on-background-intro.png),
 					  url(../img/background-progressive-midquality.jpg);
 	background-size: 458px 352px ,100% 100%;
@@ -255,22 +253,25 @@ a {
 }
 .social-contacts li {
 	list-style: none;
+}
+.social-contacts a {
 	width: 48px;
 	height: 48px;
 	background-color: rgb(129,179,210);
+	display: block;
 	margin: 10px;
 }
-.social-contacts li:first-child {
+.social-item:nth-of-type(1) a {
 	background-image: url(../img/twitter.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.social-contacts li:nth-child(2) {
+.social-item:nth-of-type(2) a {
 	background-image: url(../img/fb-icon.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 }
-.social-contacts li:last-child {
+.social-item:nth-of-type(3) a {
 	background-image: url(../img/youtube.svg);
 	background-position: center;
 	background-repeat: no-repeat;
