@@ -44,14 +44,18 @@ a {
 	color: rgb(118,99,87);
 }
 .hero {
-	background-image: url(../img/inscription-on-background-intro.png),
-					  url(../img/background-progressive-midquality.jpg);
-	background-size: 458px 352px ,100% 100%;
+	background-image: url(../img/background-progressive-midquality.jpg);
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	background-position: 50% 30%, center;
+	background-position: center;
 	background-color: rgb(84,109,127);
 	width: 1200px;
 	height: 800px;
+	margin: 0 auto;
+	padding-top: 20%;
+}
+.hero img {
+	display: block;
 	margin: 0 auto;
 }
 .search-options::before {
