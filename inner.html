@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +15,7 @@
     			<li><a href="#">Информация</a></li>
     			<li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li class="current-page">Гостиницы</li>
     		</ul>
     	</nav>
     </header>
@@ -40,13 +41,13 @@
         <h3 class="visually-hidden">Результаты поиска</h3>
         <div class="result-parameters">
           <p>Найдено: 3</p>
-          <div>
+          <div class="sorting">
             <p>Сортировка</p>
-              <div>
-                <a href="#">По цене</a>
-                <a href="#">По типу</a>
-                <a href="#">По рейтингу</a>
-              </div>
+            <div>
+              <a href="#">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По рейтингу</a>
+            </div>
           </div>
           <div>
             <a href="#">↑</a>
@@ -58,7 +59,7 @@
             <img src="img/result-1.jpg" alt="img_result_1" width="135" height="90">
           </div>
           <div>
-            <a href="#"><p>Amara Resort & Spa</p></a>          
+            <a href="#">Amara Resort & Spa</a>          
             <p>Гостиница</p>
             <p>ОТ 4000 Р.</p>
             <a href="#">Подробнее</a>
@@ -66,20 +67,20 @@
           </div>
           <div class="rating">
             <ul>
-              <li>*</li>
-              <li>*</li>
-              <li>*</li>
-              <li>*</li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
             </ul>
             <p>Рейтинг: 8,5</p>
           </div>
         </div>
-         <div class="result2">
+        <div class="result2">
           <div>
             <img src="img/result-2.jpg" alt="img_result_2" width="135" height="90">
           </div>
           <div>
-            <a href="#"><p>Desert Quail Inn</p></a>          
+            <a href="#">Desert Quail Inn</a>          
             <p>Мотель</p>
             <p>От 3000 Р.</p>
             <a href="#">Подробнее</a>
@@ -87,9 +88,9 @@
           </div>
           <div class="rating">
             <ul>
-              <li>*</li>
-              <li>*</li>             
-              <li>*</li>
+              <li></li>
+              <li></li>             
+              <li></li>
             </ul>
             <p>Рейтинг: 8,9</p>
           </div>
@@ -99,16 +100,16 @@
             <img src="img/result-3.jpg" alt="img_result_3" width="135" height="90">
           </div>
           <div>
-            <a href="#"><p>Villas at Poco Diablo</p></a>          
+            <a href="#">Villas at Poco Diablo</a>          
             <p>Апартаменты</p>
             <p>От 2000 Р.</p>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
           </div>
-          <div>
+          <div class="rating">
              <ul>
-              <li>*</li>
-              <li>*</li>
+              <li></li>
+              <li></li>
             </ul>
             <p>Рейтинг: 9,2</p>
           </div>
@@ -118,9 +119,9 @@
     <footer class="main-footer">
       <p>#VISITSEDONA</p>
       <ul class="social-contacts">
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li><a href="#"><p class="visually-hidden">Twitter</p></a></li>
+        <li><a href="#"><p class="visually-hidden">Facebook</p></a></li>
+        <li><a href="#"><p class="visually-hidden">Youtube</p></a></li>
       </ul>
       <div class="footer-logo">
         <p>Website by</p>
