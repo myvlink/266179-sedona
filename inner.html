@@ -12,29 +12,44 @@
     	<nav class="main-navigation">
         <a href="index.html"><img src="img/logo-sedona.png" alt="Логотип Sedona" width="138" height="70"></a>
     		<ul class="site-navigation">
-    			<li><a href="#">Информация</a></li>
-    			<li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="current-page">Гостиницы</li>
-    		</ul>
+          <li class="site-navigation-left"><a href="index.html">Информация</a></li>
+          <li class="site-navigation-left"><a href="#">Фото и видео</a></li>
+          <li class="site-navigation-right"><a href="#">Карта штата</a></li>
+          <li class="site-navigation-right"><a class="current-page" href="inner.html">Гостиницы</a></li>
+        </ul>
     	</nav>
     </header>
     <main class="container">
       <section class="search-options">
         <h3 class="visually-hidden">Параметры поиска</h3>
-        <form method="post" action="https://echo.htmlacademy.ru">
-          <p>Инфраструктура:</p>
-          <label>Бассейн<input type="checkbox" name="pool"></label>
-          <label>Парковка<input type="checkbox" name="parking_place"></label>
-          <label>Wi-Fi<input type="checkbox" name="wi_fi"></label>
-          <p>Тип жилья:</p>
-          <label>Гостиница<input type="checkbox" name="hotel"></label>
-          <label>Мотель<input type="checkbox" name="motel"></label>
-          <label>Апартаменты<input type="checkbox" name="apartments"></label>
-          <p><label for="cost">Стоимость в сутки (Р):</label></p>
-          <div>От 0 | До 3000</div>
-          <input type="range" min="0" max="3000" name="cost" id="cost" step="100">
-          <input type="submit" value="Показать">
+        <form class="search-hotels-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="infrastructure-column">
+            <p>Инфраструктура:</p>
+            <label for="pool">Бассейн</label><input id="pool" type="checkbox" name="pool">
+            <label for="parking_place">Парковка</label><input id="parking_place" type="checkbox" name="parking_place">
+            <label for="wi_fi">Wi-Fi<input id="wi_fi" type="checkbox" name="wi_fi"></label>
+          </div>
+          <div class="type-of-accommodation-column">
+            <p>Тип жилья:</p>
+            <label for="hotel">Гостиница</label><input id="hotel" type="checkbox" name="hotel">
+            <label for="motel">Мотель</label><input id="motel" type="checkbox" name="motel">
+            <label for="apartments">Апартаменты</label><input id="apartments" type="checkbox" name="apartments">
+          </div>
+          <div class="price-column">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
         </form>     
       </section>
       <section class="search-results">
@@ -54,18 +69,18 @@
             <a href="#">↓</a>
           </div>
         </div>
-        <div class="result1">
-          <div>
+        <div class="result">
+          <div class="result-column-1">
             <img src="img/result-1.jpg" alt="img_result_1" width="135" height="90">
           </div>
-          <div>
+          <div class="result-column-2">
             <a href="#">Amara Resort & Spa</a>          
             <p>Гостиница</p>
             <p>ОТ 4000 Р.</p>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
           </div>
-          <div class="rating">
+          <div class="rating result-column-3">
             <ul>
               <li></li>
               <li></li>
@@ -75,7 +90,8 @@
             <p>Рейтинг: 8,5</p>
           </div>
         </div>
-        <div class="result2">
+        
+        <div class="result">
           <div>
             <img src="img/result-2.jpg" alt="img_result_2" width="135" height="90">
           </div>
@@ -95,7 +111,7 @@
             <p>Рейтинг: 8,9</p>
           </div>
         </div>
-        <div class="result3">
+        <div class="result">
           <div>
             <img src="img/result-3.jpg" alt="img_result_3" width="135" height="90">
           </div>
@@ -116,8 +132,8 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <p>#VISITSEDONA</p>
+    <footer class="main-footer inner-main-filter">
+      <p class="hashtag">#VISITSEDONA</p>
       <ul class="social-contacts">
         <li class="social-item"><a href="#"><p class="visually-hidden">Twitter</p></a></li>
         <li class="social-item"><a href="#"><p class="visually-hidden">Facebook</p></a></li>
