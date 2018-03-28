@@ -194,6 +194,9 @@ a {
 	padding-top: 25px;
 	margin: 0;
 }
+.interested p:nth-of-type(2) {
+	padding: 0;
+}
 .search-hotel {
 	display: relative;
 }
