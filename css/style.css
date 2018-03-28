@@ -39,6 +39,9 @@ a {
 .site-navigation a:hover {
  	color: rgb(129,179,210);
 }
+.site-navigation a.current-page:hover {
+ 	color: rgb(118,99,87);
+}
 .site-navigation a:focus {
  	color: rgba(0,0,0,0.3);
 }
@@ -617,11 +620,10 @@ a {
 	width: 1200px;
 	min-height: 100%;
 }
-.main-navigation img {
+.main-navigation>a {
 	position: absolute;
-	margin: auto;
-    left: 0;
-    right: 0;
+	left: 50%;
+	margin-left: -69px;
 }
 .site-navigation {
 	margin: 0;
@@ -759,7 +761,8 @@ a {
 	margin: 0 auto;
 }
 .feature-4 h3 {
-	margin: 0;
+	width: 100px;
+	margin: 0 auto;
 }
 .feature-4 p:nth-of-type(2) {
 	width: 280px;
