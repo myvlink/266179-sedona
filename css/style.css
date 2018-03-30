@@ -414,7 +414,6 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-top: 
 }
 .inner-main-footer {
 	position: static;
@@ -465,6 +464,7 @@ a {
 	fill: rgb(235,235,235);
 }
 .social-item-link {
+	position: relative;
 	width: 47px;
 	height: 47px;
 	background-color: rgb(129,179,210);
@@ -479,6 +479,15 @@ a {
   	    -ms-flex-pack: center;
   	        justify-content: center;
   	fill: rgb(255,255,255);
+}
+.social-item-link::before {
+	content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .search-options {
 	background-image: url("../img/background-hotels-progressive-midquality.jpg");
