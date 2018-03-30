@@ -217,7 +217,7 @@ a {
 				0 5px 15px rgba(0,0,0,0.1),
 				-5px 5px 15px rgba(0,0,0,0.1);
 }
-.search-hotel-form-opened {
+.search-hotel-form-closed {
 	display: none;
 }
 .search-hotel-form input.arrival_date,
@@ -409,6 +409,7 @@ a {
 }
 .map {
 	background-image: url("../img/map.png");
+	background-color: rgb(209,223,179);
 	width: 1200px;
 	height: 594px;
 	margin: 0 auto;
@@ -610,9 +611,9 @@ a {
 }
 .price-controls label {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 14px;
 	line-height: 38px;
-	vertical-align: top;
 	cursor: pointer;
 	margin-top: 3px;
 }
@@ -772,6 +773,7 @@ a {
 }
 .sorting-direction a {
 	display: inline-block;
+	vertical-align: middle;
 	background-image: url("../img/icon-up-dir.svg");
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -816,6 +818,7 @@ a {
 }
 .result-column-2-container * {
 	display: inline-block;
+	vertical-align: baseline;
 }
 .result-column-2-container *:first-child {
 	margin-top: 3px;
