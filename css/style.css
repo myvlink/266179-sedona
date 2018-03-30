@@ -64,7 +64,7 @@ a {
 	content: "";
 	display: block;
 	position: absolute;
-	margin-top: 451px;
+	bottom: 0;
 	background-image: url("../img/white-figure-on-background-1200.png");
 	background-repeat: no-repeat;
 	width: 100%;
